@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="PhpCodeSniffer">
+    <phpcs_settings>
+      <PhpCSConfiguration beautifier_path="$PROJECT_DIR$/api/vendor/bin/phpcbf" standards="MySource;PEAR;PSR1;PSR12;PSR2;Squiz;Zend" tool_path="$PROJECT_DIR$/api/vendor/bin/phpcs" />
+    </phpcs_settings>
+  </component>
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/api/vendor/psr/container" />
@@ -25,6 +30,28 @@
       <path value="$PROJECT_DIR$/api/vendor/symfony/polyfill-php73" />
       <path value="$PROJECT_DIR$/api/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/api/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/api/vendor/overtrue/phplint" />
+      <path value="$PROJECT_DIR$/api/vendor/n98/junit-xml" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/api/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/api/vendor/openlss/lib-array2xml" />
+      <path value="$PROJECT_DIR$/api/vendor/felixfbecker/language-server-protocol" />
+      <path value="$PROJECT_DIR$/api/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/api/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/api/vendor/felixfbecker/advanced-json-rpc" />
+      <path value="$PROJECT_DIR$/api/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/api/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/api/vendor/netresearch/jsonmapper" />
+      <path value="$PROJECT_DIR$/api/vendor/amphp/amp" />
+      <path value="$PROJECT_DIR$/api/vendor/amphp/byte-stream" />
+      <path value="$PROJECT_DIR$/api/vendor/vimeo/psalm" />
+      <path value="$PROJECT_DIR$/api/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/api/vendor/webmozart/path-util" />
+      <path value="$PROJECT_DIR$/api/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/api/vendor/webmozart/glob" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
