@@ -2,6 +2,7 @@ init: docker-down-clear docker-pull docker-build docker-up api-init
 up: docker-up
 down: docker-down
 restart: down up
+check: lint analyze test
 lint: api-lint
 analyze: api-analyze
 test: api-test
@@ -26,7 +27,13 @@ docker-pull:
 docker-build:
 	docker-compose build
 
-api-init: api-composer-install
+api-clear:
+	docker run --rm -v ${PWD}/api:/app -w /app alpine sh -c 'rm -rf var/*'
+
+api-init: api-composer-install api-permissions
+
+api-permissions:
+	docker run --rm -v ${PWD}/api:/app -w /app alpine chmod 777 var
 
 api-composer-install:
 	docker-compose run --rm api-php-cli composer install
