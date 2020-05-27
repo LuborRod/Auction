@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Auth\Command\JoinByEmail\Confirm;
+namespace App\Auth\Command\AttachNetwork;
 
+use App\Auth\Entity\User\Id;
+use App\Auth\Entity\User\NetworkIdentity;
 use App\Auth\Entity\User\UserRepository;
 use App\Flusher;
-use DateTimeImmutable;
-use DomainException;
 
 class Handler
 {
@@ -22,11 +22,15 @@ class Handler
 
     public function handle(Command $command): void
     {
-        if (!$user = $this->users->findByJoinConfirmToken($command->token)) {
-            throw new DomainException('Incorrect token.');
+        $identity = new NetworkIdentity($command->network, $command->identity);
+
+        if ($this->users->hasByNetwork($identity)) {
+            throw new \DomainException('User with this network already exists.');
         }
 
-        $user->confirmJoin($command->token, new DateTimeImmutable());
+        $user = $this->users->get(new Id($command->id));
+
+        $user->attachNetwork($identity);
 
         $this->flusher->flush();
     }
