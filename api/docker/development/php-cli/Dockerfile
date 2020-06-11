@@ -5,14 +5,16 @@ RUN apk add --no-cache autoconf g++ make \
     && rm -rf /tmp/pear \
     && docker-php-ext-enable xdebug
 
-#RUN apk add --no-cache unzip
+RUN apk add --no-cache postgresql-dev \
+    && docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql \
+    && docker-php-ext-install pdo_pgsql
+
+RUN apk add --no-cache unzip
 
 RUN mv $PHP_INI_DIR/php.ini-development $PHP_INI_DIR/php.ini
 
 COPY ./common/php/conf.d /usr/local/etc/php/conf.d
 COPY ./development/php/conf.d /usr/local/etc/php/conf.d
-
-RUN apk add unzip
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
