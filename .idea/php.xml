@@ -91,6 +91,10 @@
       <path value="$PROJECT_DIR$/api/vendor/doctrine/collections" />
       <path value="$PROJECT_DIR$/api/vendor/doctrine/reflection" />
       <path value="$PROJECT_DIR$/api/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/api/vendor/laminas/laminas-config-aggregator" />
+      <path value="$PROJECT_DIR$/api/vendor/laminas/laminas-stdlib" />
+      <path value="$PROJECT_DIR$/api/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/api/vendor/webimpress/safe-writer" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
