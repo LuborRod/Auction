@@ -95,6 +95,11 @@
       <path value="$PROJECT_DIR$/api/vendor/laminas/laminas-stdlib" />
       <path value="$PROJECT_DIR$/api/vendor/laminas/laminas-zendframework-bridge" />
       <path value="$PROJECT_DIR$/api/vendor/webimpress/safe-writer" />
+      <path value="$PROJECT_DIR$/api/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/api/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/api/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/api/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/stopwatch" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
