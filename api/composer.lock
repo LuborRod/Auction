@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da780a60282987913cc9ac3c0a268e25",
+    "content-hash": "fba42783afc2727b2791bdc5e273143c",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -1915,6 +1915,115 @@
             "time": "2020-05-20T16:45:56+00:00"
         },
         {
+            "name": "middlewares/negotiation",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/middlewares/negotiation.git",
+                "reference": "308eff5bfad1b26e9da777e723052ae207185432"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/middlewares/negotiation/zipball/308eff5bfad1b26e9da777e723052ae207185432",
+                "reference": "308eff5bfad1b26e9da777e723052ae207185432",
+                "shasum": ""
+            },
+            "require": {
+                "middlewares/utils": "^3.0",
+                "php": "^7.2",
+                "psr/http-server-middleware": "^1.0",
+                "willdurand/negotiation": "^2.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "laminas/laminas-diactoros": "^2.2",
+                "oscarotero/php-cs-fixer-config": "^1.0",
+                "phpunit/phpunit": "^8.1",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Middlewares\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Middleware to implement content negotiation",
+            "homepage": "https://github.com/middlewares/negotiation",
+            "keywords": [
+                "content",
+                "encoding",
+                "http",
+                "language",
+                "middleware",
+                "negotiation",
+                "psr-15",
+                "psr-7",
+                "server"
+            ],
+            "time": "2020-03-07T11:55:39+00:00"
+        },
+        {
+            "name": "middlewares/utils",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/middlewares/utils.git",
+                "reference": "13689487e8f3bba10b6cc66ed206efc8b874163e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/middlewares/utils/zipball/13689487e8f3bba10b6cc66ed206efc8b874163e",
+                "reference": "13689487e8f3bba10b6cc66ed206efc8b874163e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2",
+                "psr/container": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0",
+                "psr/http-server-middleware": "^1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "guzzlehttp/psr7": "dev-master",
+                "laminas/laminas-diactoros": "^2.2",
+                "nyholm/psr7": "^1.0",
+                "oscarotero/php-cs-fixer-config": "^1.0",
+                "phpunit/phpunit": "^8.1",
+                "slim/psr7": "~0.3",
+                "squizlabs/php_codesniffer": "^3.0",
+                "sunrise/http-message": "^1.0",
+                "sunrise/http-server-request": "^1.0",
+                "sunrise/stream": "^1.0",
+                "sunrise/uri": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Middlewares\\Utils\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Common utils for PSR-15 middleware packages",
+            "homepage": "https://github.com/middlewares/utils",
+            "keywords": [
+                "PSR-11",
+                "http",
+                "middleware",
+                "psr-15",
+                "psr-17",
+                "psr-7"
+            ],
+            "time": "2020-01-19T00:30:41+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "2.1.0",
             "source": {
@@ -2100,6 +2209,16 @@
                 }
             ],
             "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
+            "funding": [
+                {
+                    "url": "https://github.com/Ocramius",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/ocramius/package-versions",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-04-06T17:43:35+00:00"
         },
         {
@@ -3222,6 +3341,69 @@
             "time": "2020-03-23T09:12:05+00:00"
         },
         {
+            "name": "ptlis/conneg",
+            "version": "v4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ptlis/conneg.git",
+                "reference": "ead222fb5c04f1a2f37ac2280751ccb6dff8b0cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ptlis/conneg/zipball/ead222fb5c04f1a2f37ac2280751ccb6dff8b0cc",
+                "reference": "ead222fb5c04f1a2f37ac2280751ccb6dff8b0cc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "pdepend/pdepend": "~2.0",
+                "phploc/phploc": "~2.0",
+                "phpmd/phpmd": "~2.2",
+                "phpunit/phpunit": "~4.5",
+                "sebastian/phpcpd": "~2.0",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ptlis\\ConNeg\\": "src/",
+                    "ptlis\\ConNeg\\Test\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "brian ridley",
+                    "email": "ptlis@ptlis.net"
+                }
+            ],
+            "description": "Tools for performing content negotiation.",
+            "keywords": [
+                "accept",
+                "accept-charset",
+                "accept-encoding",
+                "accept-language",
+                "charset",
+                "content",
+                "content-type",
+                "encoding",
+                "field",
+                "header",
+                "http",
+                "language",
+                "mime",
+                "negotiation",
+                "parse",
+                "types"
+            ],
+            "time": "2015-08-31T20:03:05+00:00"
+        },
+        {
             "name": "ralouphie/getallheaders",
             "version": "3.0.3",
             "source": {
@@ -3643,6 +3825,16 @@
                 "micro",
                 "router"
             ],
+            "funding": [
+                {
+                    "url": "https://opencollective.com/slimphp",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/slim/slim",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-04-14T20:49:48+00:00"
         },
         {
@@ -3706,6 +3898,86 @@
                 "mailer"
             ],
             "time": "2019-11-12T09:31:26+00:00"
+        },
+        {
+            "name": "symfony/config",
+            "version": "v5.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/config.git",
+                "reference": "b8623ef3d99fe62a34baf7a111b576216965f880"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/config/zipball/b8623ef3d99fe62a34baf7a111b576216965f880",
+                "reference": "b8623ef3d99fe62a34baf7a111b576216965f880",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/filesystem": "^4.4|^5.0",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-php80": "^1.15"
+            },
+            "conflict": {
+                "symfony/finder": "<4.4"
+            },
+            "require-dev": {
+                "symfony/event-dispatcher": "^4.4|^5.0",
+                "symfony/finder": "^4.4|^5.0",
+                "symfony/messenger": "^4.4|^5.0",
+                "symfony/service-contracts": "^1.1|^2",
+                "symfony/yaml": "^4.4|^5.0"
+            },
+            "suggest": {
+                "symfony/yaml": "To use the yaml reference dumper"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Config\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Config Component",
+            "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-05-23T13:08:13+00:00"
         },
         {
             "name": "symfony/console",
@@ -3861,6 +4133,70 @@
             "time": "2020-05-27T08:34:37+00:00"
         },
         {
+            "name": "symfony/filesystem",
+            "version": "v5.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "6e4320f06d5f2cce0d96530162491f4465179157"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/6e4320f06d5f2cce0d96530162491f4465179157",
+                "reference": "6e4320f06d5f2cce0d96530162491f4465179157",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Filesystem Component",
+            "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-05-30T20:35:19+00:00"
+        },
+        {
             "name": "symfony/options-resolver",
             "version": "v5.1.2",
             "source": {
@@ -3985,6 +4321,20 @@
                 "ctype",
                 "polyfill",
                 "portable"
+            ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-05-12T16:14:59+00:00"
         },
@@ -4877,6 +5227,278 @@
             "time": "2020-06-11T12:16:36+00:00"
         },
         {
+            "name": "symfony/translation",
+            "version": "v5.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation.git",
+                "reference": "d387f07d4c15f9c09439cf3f13ddbe0b2c5e8be2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/d387f07d4c15f9c09439cf3f13ddbe0b2c5e8be2",
+                "reference": "d387f07d4c15f9c09439cf3f13ddbe0b2c5e8be2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/polyfill-php80": "^1.15",
+                "symfony/translation-contracts": "^2"
+            },
+            "conflict": {
+                "symfony/config": "<4.4",
+                "symfony/dependency-injection": "<5.0",
+                "symfony/http-kernel": "<5.0",
+                "symfony/twig-bundle": "<5.0",
+                "symfony/yaml": "<4.4"
+            },
+            "provide": {
+                "symfony/translation-implementation": "2.0"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "^4.4|^5.0",
+                "symfony/console": "^4.4|^5.0",
+                "symfony/dependency-injection": "^5.0",
+                "symfony/finder": "^4.4|^5.0",
+                "symfony/http-kernel": "^5.0",
+                "symfony/intl": "^4.4|^5.0",
+                "symfony/service-contracts": "^1.1.2|^2",
+                "symfony/yaml": "^4.4|^5.0"
+            },
+            "suggest": {
+                "psr/log-implementation": "To use logging capability in translator",
+                "symfony/config": "",
+                "symfony/yaml": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Translation\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Translation Component",
+            "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-05-30T20:35:19+00:00"
+        },
+        {
+            "name": "symfony/translation-contracts",
+            "version": "v2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation-contracts.git",
+                "reference": "e5ca07c8f817f865f618aa072c2fe8e0e637340e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/e5ca07c8f817f865f618aa072c2fe8e0e637340e",
+                "reference": "e5ca07c8f817f865f618aa072c2fe8e0e637340e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5"
+            },
+            "suggest": {
+                "symfony/translation-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\Translation\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to translation",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-05-20T17:43:50+00:00"
+        },
+        {
+            "name": "symfony/validator",
+            "version": "v5.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/validator.git",
+                "reference": "5e80f314a2faff6fb97942526e27c528b10acdb8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/validator/zipball/5e80f314a2faff6fb97942526e27c528b10acdb8",
+                "reference": "5e80f314a2faff6fb97942526e27c528b10acdb8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/polyfill-php80": "^1.15",
+                "symfony/translation-contracts": "^1.1|^2"
+            },
+            "conflict": {
+                "doctrine/lexer": "<1.0.2",
+                "phpunit/phpunit": "<5.4.3",
+                "symfony/dependency-injection": "<4.4",
+                "symfony/expression-language": "<5.1",
+                "symfony/http-kernel": "<4.4",
+                "symfony/intl": "<4.4",
+                "symfony/translation": "<4.4",
+                "symfony/yaml": "<4.4"
+            },
+            "require-dev": {
+                "doctrine/annotations": "~1.7",
+                "doctrine/cache": "~1.0",
+                "egulias/email-validator": "^2.1.10",
+                "symfony/cache": "^4.4|^5.0",
+                "symfony/config": "^4.4|^5.0",
+                "symfony/dependency-injection": "^4.4|^5.0",
+                "symfony/expression-language": "^5.1",
+                "symfony/http-client": "^4.4|^5.0",
+                "symfony/http-foundation": "^4.4|^5.0",
+                "symfony/http-kernel": "^4.4|^5.0",
+                "symfony/intl": "^4.4|^5.0",
+                "symfony/mime": "^4.4|^5.0",
+                "symfony/property-access": "^4.4|^5.0",
+                "symfony/property-info": "^4.4|^5.0",
+                "symfony/translation": "^4.4|^5.0",
+                "symfony/yaml": "^4.4|^5.0"
+            },
+            "suggest": {
+                "doctrine/annotations": "For using the annotation mapping. You will also need doctrine/cache.",
+                "doctrine/cache": "For using the default cached annotation reader.",
+                "egulias/email-validator": "Strict (RFC compliant) email validation",
+                "psr/cache-implementation": "For using the mapping cache.",
+                "symfony/config": "",
+                "symfony/expression-language": "For using the Expression validator and the ExpressionLanguageSyntax constraints",
+                "symfony/http-foundation": "",
+                "symfony/intl": "",
+                "symfony/property-access": "For accessing properties within comparison constraints",
+                "symfony/property-info": "To automatically add NotNull and Type constraints",
+                "symfony/translation": "For translating validation errors.",
+                "symfony/yaml": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Validator\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Validator Component",
+            "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-06-02T08:42:14+00:00"
+        },
+        {
             "name": "twig/twig",
             "version": "v3.0.3",
             "source": {
@@ -5040,6 +5662,58 @@
                 "validate"
             ],
             "time": "2020-06-16T10:16:42+00:00"
+        },
+        {
+            "name": "willdurand/negotiation",
+            "version": "v2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/willdurand/Negotiation.git",
+                "reference": "03436ededa67c6e83b9b12defac15384cb399dc9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/03436ededa67c6e83b9b12defac15384cb399dc9",
+                "reference": "03436ededa67c6e83b9b12defac15384cb399dc9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Negotiation\\": "src/Negotiation"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Durand",
+                    "email": "will+git@drnd.me"
+                }
+            ],
+            "description": "Content Negotiation tools for PHP provided as a standalone library.",
+            "homepage": "http://williamdurand.fr/Negotiation/",
+            "keywords": [
+                "accept",
+                "content",
+                "format",
+                "header",
+                "negotiation"
+            ],
+            "time": "2017-05-14T17:21:12+00:00"
         }
     ],
     "packages-dev": [
@@ -7096,6 +7770,12 @@
                 "udiff",
                 "unidiff",
                 "unified diff"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
             ],
             "time": "2020-05-08T05:01:12+00:00"
         },
